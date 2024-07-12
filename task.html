@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Task List</title>
+    <link rel="stylesheet" href="task.css" />
+  </head>
+  <body>
+    <div class="task-list">
+      <h1>Task List</h1>
+
+      <div id="taskAdd">
+
+      </div>
+      <div class="add-task" id="newTask">
+        
+        <h2>Add New Task</h2>
+        <form id="taskForm">
+          <label for="task-title">Title:</label><br />
+          <input type="text" id="task-title" name="task-title" required /><br />
+
+          <label for="task-description">Description:</label><br />
+          <textarea
+            id="task-description"
+            name="task-description"
+            rows="4"
+            required
+          ></textarea
+          ><br />
+
+          <label for="task-status">Status:</label><br />
+          <select id="task-status" name="task-status" required>
+            <option value="pending">Pending</option>
+            <option value="completed">Completed</option></select
+          ><br />
+
+          <button type="submit">Add Task</button>
+        </form>
+      </div>
+    </div>
+    <script src="task.js"></script>
+  </body>
+</html>
